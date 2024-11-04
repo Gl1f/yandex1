@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1533</width>
+    <height>908</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>100000</width>
+    <height>1000000</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Редактор аудио-файлов</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1585</width>
+      <height>885</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QTabWidget" name="tabWidget">
+         <property name="minimumSize">
+          <size>
+           <width>1581</width>
+           <height>881</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>1581</width>
+           <height>881</height>
+          </size>
+         </property>
+         <property name="whatsThis">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Это вкладка для изменений аудио-файла и сохранения его&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="currentIndex">
+          <number>2</number>
+         </property>
+         <widget class="QWidget" name="tab">
+          <attribute name="title">
+           <string>Фильтрация и поиск</string>
+          </attribute>
+          <widget class="QTableView" name="tableview_1">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>1111</width>
+             <height>861</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>1130</x>
+             <y>20</y>
+             <width>402</width>
+             <height>821</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_7">
+            <item>
+             <spacer name="verticalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="button_for_upload">
+              <property name="text">
+               <string>Загрузить файл</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_13">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_2">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_3">
+                <item>
+                 <widget class="QComboBox" name="filter_selection">
+                  <item>
+                   <property name="text">
+                    <string>Название файла</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Время воспроизведения файла</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Формат файла</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Размер файла</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Ссылка к файлу</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Сбросить</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item alignment="Qt::AlignBottom">
+                 <widget class="QTextEdit" name="parameter">
+                  <property name="maximumSize">
+                   <size>
+                    <width>250</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QPushButton" name="search">
+                <property name="text">
+                 <string>Поиск</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="change">
+          <attribute name="title">
+           <string>Изменение</string>
+          </attribute>
+          <widget class="QTableView" name="tableview_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>1111</width>
+             <height>871</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="spinbox_key">
+           <property name="geometry">
+            <rect>
+             <x>1510</x>
+             <y>210</y>
+             <width>42</width>
+             <height>22</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="spinbox_speed">
+           <property name="geometry">
+            <rect>
+             <x>1510</x>
+             <y>450</y>
+             <width>42</width>
+             <height>22</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QWidget" name="layoutWidget_2">
+           <property name="geometry">
+            <rect>
+             <x>1120</x>
+             <y>0</y>
+             <width>371</width>
+             <height>841</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <spacer name="verticalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="upscaling">
+              <property name="text">
+               <string>Повышение тональности</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="downscaling">
+              <property name="text">
+               <string>Понижение тональности</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="horizontalslider_key">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="speed_up">
+              <property name="text">
+               <string>Ускорение</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="speed_down">
+              <property name="text">
+               <string>Замедление</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="horizontalslider_speed">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="reverse">
+              <property name="text">
+               <string>Обратная перемотка</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="information">
+          <attribute name="title">
+           <string>Информация о изменённых файлах</string>
+          </attribute>
+          <widget class="QTableView" name="tableview_3">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>1111</width>
+             <height>861</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QWidget" name="layoutWidget_3">
+           <property name="geometry">
+            <rect>
+             <x>1130</x>
+             <y>20</y>
+             <width>402</width>
+             <height>821</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_8">
+            <item>
+             <spacer name="verticalSpacer_6">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_4">
+                <item>
+                 <widget class="QComboBox" name="filter_selection_2">
+                  <item>
+                   <property name="text">
+                    <string>Название файла</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Обратная перемотка</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Ускорение</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Замедление</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Повышение тональности</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Понижение тональности</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Сбросить</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item alignment="Qt::AlignBottom">
+                 <widget class="QTextEdit" name="parameter_2">
+                  <property name="maximumSize">
+                   <size>
+                    <width>250</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QPushButton" name="search_2">
+                <property name="text">
+                 <string>Поиск</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer_14">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
